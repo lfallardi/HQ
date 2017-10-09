@@ -1,22 +1,24 @@
+@import "variableshtml";
+
 body{
-	background-cover: no-repeat;
+	background-repeat: no-repeat;
 	background-image: url(../img/FondoEscritorio.jpg);
 	background-size: cover;
 	font-family: Arial;
 	font-size: 14px;
-
 }
-
 
 #Login{
     background: rgba(240, 248, 255, 0.59);
-	height: 400px;
+	height: 350px;
 	margin-top: 150px;
 	padding: 0px;
 	text-align: center;
 	i{
 		font-size: 150px;
 		padding: 10px 0px;
+		margin-top: 20px;
+	    color: rgba(105, 105, 105, 0.78);
 	}
 	form{
 		vertical-align: bottom;
@@ -42,11 +44,51 @@ body{
     		border-color: #4fbf70;
     	}
 	}
-	a{
-		color: black;
-		display: block;
-		text-align: left;
-		margin-top: 30px;
-		padding: 0px 10px;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	#Login{
+		i{
+			font-size: 50px;
+			padding: 10px 0px;
+			margin-top: 20px;
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	#Login{
+		i{
+			font-size: 100px;
+			padding: 10px 0px;
+			margin-top: 20px;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	#Login{
+		i{
+			font-size: 150px;
+			padding: 10px 0px;
+			margin-top: 20px;
+		}
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	#Login{
+		i{
+			font-size: 150px;
+			padding: 10px 0px;
+			margin-top: 20px;
+		}
 	}
 }

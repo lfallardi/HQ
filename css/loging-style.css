@@ -1,5 +1,5 @@
 body {
-  background-cover: no-repeat;
+  background-repeat: no-repeat;
   background-image: url(../img/FondoEscritorio.jpg);
   background-size: cover;
   font-family: Arial;
@@ -7,13 +7,15 @@ body {
 
 #Login {
   background: rgba(240, 248, 255, 0.59);
-  height: 400px;
+  height: 350px;
   margin-top: 150px;
   padding: 0px;
   text-align: center; }
   #Login i {
     font-size: 150px;
-    padding: 10px 0px; }
+    padding: 10px 0px;
+    margin-top: 20px;
+    color: rgba(105, 105, 105, 0.78); }
   #Login form {
     vertical-align: bottom; }
   #Login input {
@@ -33,11 +35,26 @@ body {
     border-color: #4fbf70; }
     #Login .btn-primary:focus {
       border-color: #4fbf70; }
-  #Login a {
-    color: black;
-    display: block;
-    text-align: left;
-    margin-top: 30px;
-    padding: 0px 10px; }
+
+@media (min-width: 576px) {
+  #Login i {
+    font-size: 50px;
+    padding: 10px 0px;
+    margin-top: 20px; } }
+@media (min-width: 768px) {
+  #Login i {
+    font-size: 100px;
+    padding: 10px 0px;
+    margin-top: 20px; } }
+@media (min-width: 992px) {
+  #Login i {
+    font-size: 150px;
+    padding: 10px 0px;
+    margin-top: 20px; } }
+@media (min-width: 1200px) {
+  #Login i {
+    font-size: 150px;
+    padding: 10px 0px;
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=loging-style.css.map */
